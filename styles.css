@@ -40,13 +40,19 @@ input{
 
 }
 input::placeholder{
-    color: #d4d5d8d0;
+    color: #8d8d8d;
+}
+input:active{
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    caret-color: #1877f2;
 }
   
 button {
     cursor: pointer;
     border: none;
     outline: none;
+    
 }
 .container-main{
     height: 100vh;
@@ -58,7 +64,7 @@ button {
     grid-template-columns: repeat(2, 1fr); */
     display: flex;
     text-align: left;
-    margin: 5% auto;
+    margin: 1.5% auto;
     height: 80vh;
     column-gap: 3rem;
     padding: 0 4% 2%;
@@ -105,6 +111,9 @@ button {
     color: #ffffff;
     letter-spacing: .80px;
 }
+.submit:hover{
+    background-color: #166fe5;;
+}
 
 .reset {
     display: flex;
@@ -115,6 +124,10 @@ button {
     padding-bottom: 20px;
     margin-bottom: 6px;
     border-bottom: 1px solid #dee1e4;
+}
+.reset:hover{
+   color: #1877f2;
+   text-decoration: underline;
 }
 
 .new__account{
@@ -128,7 +141,13 @@ button {
     flex-direction: column;
     background-color: var(--new-account);
     margin-top: 1rem;
+    transition: all .3s ease;
     
+}
+
+.new__account:hover{
+    background-color: #36a420;
+   
 }
 .new__account>a {
     color: #ffff;
@@ -151,8 +170,12 @@ button {
 
 .card__footer > a > span {
     font-weight: bold;
+    transition: .3s all ease;
 }
 
+.card__footer > a > span:hover{
+    text-decoration: underline;
+}
 footer {
     display: flex;
     flex-direction: column;
@@ -160,7 +183,7 @@ footer {
     text-align: center;
     gap: 1rem;
     font-size: 1.1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .icon{
